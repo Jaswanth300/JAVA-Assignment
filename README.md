@@ -6,6 +6,7 @@
 - **Name:** Bala Naga Jaswanth
 - **Registration Number:** 192424300
 - **College:** SIMATS Engineering, Saveetha School of Engineering
+- **Department / Year:** AI & DS / 3rd Year
 - **Java Platform:** OpenJDK 21 LTS / Java SE 26
 - **GitHub Profile:** [https://github.com/Jaswanth300](https://github.com/Jaswanth300)
 - **Primary Repository:** [https://github.com/Jaswanth300/JAVA-Assignment](https://github.com/Jaswanth300/JAVA-Assignment)
@@ -14,7 +15,7 @@
 
 ### Coursework Assignments Overview
 
-This repository contains the complete, academically rigorous, and empirically validated laboratory submissions for **Java Programming** across Course Outcomes CO1, CO2, CO3, and CO4:
+This repository contains the complete, academically rigorous, and empirically validated laboratory submissions for **Java Programming** across Course Outcomes CO1, CO2, CO3, CO4, and CO5:
 
 ```
 CSA09-192424300-Assignments/
@@ -32,10 +33,14 @@ CSA09-192424300-Assignments/
 ├── Assignment4/                               # Assignment 4 – CO4: Event-Driven GUI Design
 │   ├── Task01/ to Task06/                     # Complete Java implementations (MVC, Layouts, Swing+JDBC)
 │   └── README.md                              # Compilation & execution instructions
+├── Assignment5/                               # Assignment 5 – CO5: Data Persistence Engineering (Files & JDBC)
+│   ├── Task01/ to Task06/                     # Complete Java implementations (PassStore, Batching, ETL, DAO)
+│   └── README.md                              # Compilation & execution instructions
 ├── screenshots/                               # Authentic Eclipse IDE execution transcripts
 │   ├── Assignment2/                           # Eclipse transcripts for Q1–Q7
 │   ├── Assignment3/                           # Eclipse transcripts for Q1–Q7
-│   └── Assignment4/                           # Eclipse transcripts for Tasks 01–06
+│   ├── Assignment4/                           # Eclipse transcripts for Tasks 01–06
+│   └── Assignment5/                           # Eclipse transcripts for Tasks 01–06
 ├── SIMATS_Java_Assignment_1_Report.pdf        # Final Comprehensive Report: Assignment 1 (CO1)
 ├── SIMATS_Java_Assignment_1_Report.docx       # Editable Comprehensive Report: Assignment 1
 ├── SIMATS_Java_Assignment_2_Report.pdf        # Final Comprehensive Report: Assignment 2 (CO2) - 35 Pages
@@ -44,6 +49,8 @@ CSA09-192424300-Assignments/
 ├── SIMATS_Java_Assignment_3_Report.docx       # Editable Comprehensive Report: Assignment 3
 ├── SIMATS_Java_Assignment_4_Report.pdf        # Final Comprehensive Report: Assignment 4 (CO4) - 29 Pages
 ├── SIMATS_Java_Assignment_4_Report.docx       # Editable Comprehensive Report: Assignment 4
+├── SIMATS_Java_Assignment_5_Report.pdf        # Final Comprehensive Report: Assignment 5 (CO5) - 24 Pages
+├── SIMATS_Java_Assignment_5_Report.docx       # Editable Comprehensive Report: Assignment 5
 └── README.md                                  # Master repository portfolio guide
 ```
 
@@ -57,6 +64,7 @@ CSA09-192424300-Assignments/
 | **Assignment 2** | **CO2** | Strings, StringBuilder, Collections, hashCode-equals, Bucket Queue | [`Assignment2/`](./Assignment2/) | [`SIMATS_Java_Assignment_2_Report.pdf`](./SIMATS_Java_Assignment_2_Report.pdf) |
 | **Assignment 3** | **CO3** | Exception Hierarchy, Try-With-Resources, Threads, Concurrency | [`Assignment3/`](./Assignment3/) | [`SIMATS_Java_Assignment_3_Report.pdf`](./SIMATS_Java_Assignment_3_Report.pdf) |
 | **Assignment 4** | **CO4** | Event-Driven GUI Design, Swing MVC, Forensics, Swing+JDBC App | [`Assignment4/`](./Assignment4/) | [`SIMATS_Java_Assignment_4_Report.pdf`](./SIMATS_Java_Assignment_4_Report.pdf) |
+| **Assignment 5** | **CO5** | Data Persistence Engineering, Streams, Buffering, Batching, JDBC Transactions, ETL | [`Assignment5/`](./Assignment5/) | [`SIMATS_Java_Assignment_5_Report.pdf`](./SIMATS_Java_Assignment_5_Report.pdf) |
 
 ---
 
@@ -88,4 +96,16 @@ java -cp bin q1.ATMSimulation
 cd Assignment4
 javac -d bin Task01/RefactoredFeeWindow.java Task02/OutpatientDesk.java Task03/LibrarySearchScreen.java Task04/DrawPad.java Task05/Converter.java Task06/CampusEventRegistrationApp.java
 java -cp bin task01.RefactoredFeeWindow
+```
+
+#### Assignment 5 (CO5):
+```bash
+cd Assignment5
+javac -cp "lib/*" -d bin Task01/*.java Task02/*.java Task03/*.java Task04/*.java Task05/*.java Task06/*.java
+# Run File Store & Defensive Search
+java -cp "bin:lib/*" task01.PassStore
+# Run Ingestion Benchmark
+java -cp "bin:lib/*" task03.BatchInsertBenchmark
+# Run Enterprise ETL Migration & Rejection Audit
+java -cp "bin:lib/*" task06.PassMigration
 ```
